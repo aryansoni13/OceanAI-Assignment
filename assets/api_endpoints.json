@@ -1,0 +1,39 @@
+{
+  "endpoints": [
+    {
+      "method": "POST",
+      "path": "/api/validate_coupon",
+      "description": "Validates a discount code.",
+      "request_body": {
+        "code": "string"
+      },
+      "response": {
+        "valid": "boolean",
+        "discount_percent": "integer"
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/submit_order",
+      "description": "Submits the final order details.",
+      "request_body": {
+        "user": {
+          "name": "string",
+          "email": "string",
+          "address": "string"
+        },
+        "cart": [
+          {
+            "item_id": "string",
+            "quantity": "integer"
+          }
+        ],
+        "payment_method": "string"
+      },
+      "response": {
+        "order_id": "string",
+        "status": "success|failure"
+      }
+    }
+  ]
+}

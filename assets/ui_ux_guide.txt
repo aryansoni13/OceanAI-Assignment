@@ -1,0 +1,22 @@
+UI/UX Guidelines for Checkout Page
+
+1. Error Messages
+- All form validation errors must be displayed in RED text (#FF0000).
+- Error messages should appear immediately below the invalid field.
+- Text content:
+  - Name: "Name is required"
+  - Email: "Valid email is required"
+  - Address: "Address is required"
+
+2. Buttons
+- "Add to Cart" buttons should be Blue.
+- "Pay Now" button must be Green (#28a745) to indicate a positive action.
+- "Apply" discount button should be standard gray/default.
+
+3. Success State
+- Upon successful payment, the form should hide.
+- A message "Payment Successful!" should appear in Green, centered.
+
+4. Layout
+- The page should be centered with a max-width of 800px.
+- Cart summary should be distinct from the shipping form (e.g., different background color).

@@ -1,0 +1,2 @@
+This is a sample document for testing the QA Agent ingestion pipeline.
+It contains a few sentences about the project.
